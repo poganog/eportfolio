@@ -4,7 +4,8 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: Arial, sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: auto; /* Allow vertical scroll only if needed */
 }
 
 /* Background container */
@@ -69,7 +70,7 @@ body, html {
   font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
-  left: 1rem;
+  right: 1rem; /* Changed from left to right */
 }
 
 /* Mobile navbar styling */
@@ -117,9 +118,17 @@ body, html {
 
 /* Word cloud styling */
 .word-cloud {
-  max-width: 90%;
+  max-width: 100%; /* Use full width on mobile */
   height: auto;
-  margin: 2rem auto;
+  margin: 1rem auto; /* Reduce margin on mobile */
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .word-cloud {
+    max-width: 100%;
+    margin: 0.5rem auto; /* Smaller margin for mobile */
+  }
 }
 
 /* Image credit styling */
