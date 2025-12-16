@@ -39,6 +39,25 @@ body, html {
   padding: 2rem;
 }
 
+.image-credit {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  z-index: 10;
+}
+
+.image-credit a {
+  color: white;
+  text-decoration: underline;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .navbar {
@@ -49,4 +68,5 @@ body, html {
     font-size: 1.5rem;
   }
 }
+
 
