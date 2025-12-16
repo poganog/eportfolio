@@ -63,9 +63,13 @@ body, html {
   .navbar {
     flex-direction: column;
     align-items: center;
+    padding: 0.5rem;
   }
   .content h1 {
     font-size: 1.5rem;
+  }
+  .image-credit {
+    font-size: 0.7rem;
   }
 }
 
