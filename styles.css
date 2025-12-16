@@ -149,3 +149,42 @@ body, html {
   color: white;
   text-decoration: underline;
 }
+
+/* Footer styling */
+.footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap; /* Allow logos to wrap on small screens */
+}
+
+.sponsor-logo {
+  height: 40px; /* Adjust as needed */
+  margin: 0 1rem;
+  filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
+}
+
+.footer-text {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .sponsor-logo {
+    height: 30px; /* Smaller logos on mobile */
+    margin: 0.3rem;
+  }
+}
