@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Global Cities Network</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content: Global Cities Network -->
+  <div class="content">
+    <h1>Global Cities Network</h1>
+
+    <!-- Explanation Box -->
+    <div class="education-box">
+      <h2>Electromagnetism Analogy</h2>
+      <p>
+        This project attempts to represent cities using an analogy to electromagnetism.
+        We model two electric fields of opposite signals for each city:
+      </p>
+
+      <p>
+        <strong>Repulsive Field:</strong>
+        $$R_i(x) = -\alpha \cdot \frac{Pop_i^\beta}{(d(x,x_i)+ϵ)^k}$$
+      </p>
+
+      <p>
+        <strong>Attractive Field:</strong>
+        $$A_i(x) = +\alpha^\prime \cdot \frac{Pop_i^{\beta^\prime}}{(d(x,x_i)+ϵ)^{k^\prime}}$$
+      </p>
+
+      <p>
+        The resulting networks are formed by connecting each city to its strongest attractor.
+      </p>
+    </div>
+
+    <!-- Map Box -->
+    <div class="education-box">
+      <h2>Resulting Networks</h2>
+      <div class="map-container">
+        <!-- Embed the HTML map below -->
+        <iframe src="map_geodnet.html" width="100%" height="500px" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+  <footer class="footer">
+  <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+  </div>
+  <!-- <p class="footer-text">&copy; 2025 Pedro Afonso. All rights reserved.</p>-->
+</footer>
+</body>
+</html>
