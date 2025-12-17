@@ -108,21 +108,15 @@ body, html {
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  padding: 1rem;
-  min-height: 100vh;
+  padding: 1rem 0.5rem; /* Reduced top/bottom padding, slight side padding */
+  min-height: calc(100vh - 60px); /* Account for navbar height */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align content to the top */
+  justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
-}
-
-/* Mobile-specific adjustments */
-@media (max-width: 767px) {
-  .content {
-    padding: 0.5rem;
-    justify-content: flex-start; /* Ensure content starts at the top */
-  }
+  position: relative; /* Ensure content is above the background */
+  z-index: 5; /* Higher than background, lower than navbar */
 }
 
 /* Word cloud styling */
@@ -150,8 +144,9 @@ body, html {
   color: white;
   text-align: center;
   padding: 0.5rem;
-  font-size: 0.8rem;
-  z-index: 10;
+  font-size: 0.7rem;
+  z-index: 1; /* Lower than content */
+  pointer-events: none; /* Allow clicks to pass through to content */
 }
 
 .image-credit a {
@@ -200,14 +195,16 @@ body, html {
 
 /* Education boxes */
 .education-box {
-  background: rgba(0, 0, 0, 0.85); /* 85% opaque */
+  background: rgba(0, 0, 0, 0.85);
   border-radius: 8px;
   padding: 1.5rem;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   max-width: 800px;
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: left;
+  position: relative; /* Ensure links are clickable */
+  z-index: 10; /* Higher than image credit */
 }
 
 /* Hyperlinks in education boxes */
@@ -220,8 +217,14 @@ body, html {
   text-decoration: underline;
 }
 
-/* Mobile adjustments */
+/* Mobile-specific adjustments */
 @media (max-width: 767px) {
+  .content {
+    padding: 0.5rem;
+    justify-content: flex-start; /* Ensure content starts at the top */
+  }
+}
+
   .education-box {
     max-width: 95%;
     padding: 1rem;
