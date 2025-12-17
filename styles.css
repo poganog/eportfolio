@@ -127,13 +127,6 @@ body, html {
   display: block;
 }
 
-@media (max-width: 767px) {
-  .word-cloud {
-    max-width: 100%;
-    margin: 0.5rem auto; /* Smaller margin for mobile */
-  }
-}
-
 /* Image credit styling */
 .image-credit {
   position: fixed;
@@ -166,6 +159,11 @@ body, html {
   z-index: 10;
 }
 
+.footer-text {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
 .sponsors {
   display: flex;
   justify-content: center;
@@ -175,22 +173,9 @@ body, html {
 }
 
 .sponsor-logo {
-  height: 40px; /* Adjust as needed */
+  height: 50px;
   margin: 0 1rem;
   filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
-}
-
-.footer-text {
-  margin: 0;
-  font-size: 0.8rem;
-}
-
-/* Mobile adjustments */
-@media (max-width: 767px) {
-  .sponsor-logo {
-    height: 30px; /* Smaller logos on mobile */
-    margin: 0.3rem;
-  }
 }
 
 /* Education boxes */
@@ -217,17 +202,87 @@ body, html {
   text-decoration: underline;
 }
 
-/* Mobile-specific adjustments */
+/* Project sections */
+.project-section {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+/* Project lists */
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+.project-list a {
+  color: #FFD700; /* Darker yellow */
+  text-decoration: none;
+}
+
+.project-list a:hover {
+  text-decoration: underline;
+}
+
+.explanation {
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.map-container {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  border-radius: 4px;
+  border: none;
+}
+
+/* Mobile adjustments */
 @media (max-width: 767px) {
   .content {
     padding: 0.5rem;
     justify-content: flex-start; /* Ensure content starts at the top */
   }
-}
+
+  .word-cloud {
+    max-width: 100%;
+    margin: 0.5rem auto; /* Smaller margin for mobile */
+  }
+
+  .sponsor-logo {
+    height: 30px; /* Smaller logos on mobile */
+    margin: 0.3rem;
+  }
 
   .education-box {
     max-width: 95%;
     padding: 1rem;
     margin: 0.5rem auto;
+  }
+
+  .project-section {
+    max-width: 95%;
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+
+  .map-container iframe {
+    height: 250px;
   }
 }
