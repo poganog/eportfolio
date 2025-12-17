@@ -261,6 +261,33 @@ body, html {
   font-style: italic;
 }
 
+/* Contact details styling */
+.contact-details {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-details p {
+  margin: 0.5rem 0;
+}
+
+.contact-link {
+  color: #FFD700; /* Darker yellow */
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.joke {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
 /* Mobile adjustments */
 @media (max-width: 767px) {
   .content {
@@ -294,6 +321,7 @@ body, html {
     height: 300px;
   }
 }
+
 
 
 
