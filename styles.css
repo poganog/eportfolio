@@ -108,12 +108,13 @@ body, html {
   text-align: center;
   color: white;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  padding: 2rem;
+  padding: 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box; /* Include padding in width/height */
 }
 
 /* Word cloud styling */
@@ -188,3 +189,4 @@ body, html {
     margin: 0.3rem;
   }
 }
+
