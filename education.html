@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Education</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="iberian-peninsula-night-desktop.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content: Education -->
+  <div class="content">
+    <h1>Education</h1>
+
+    <!-- Bachelor's Degree -->
+    <div class="education-box">
+      <h2>Bachelor's in Physics (Minor in Astrophysics)</h2>
+      <p><strong>Institution:</strong> University of Porto (Portugal)</p>
+      <p><strong>Year:</strong> 2019–2025</p>
+      <p><strong>Coursework:</strong> Real Analysis, Mechanics, Linear Algebra, Electromagnetism, Computational Physics, etc.</p>
+    </div>
+
+    <!-- Bachelor's Erasmus -->
+    <div class="education-box">
+      <h2>Bachelor's 1-year Erasmus Exchange</h2>
+      <p><strong>Institution:</strong> University of Paris-Saclay (France)</p>
+      <p><strong>Year:</strong> 2023-2024</p>
+      <p><strong>Focus:</strong> Nuclear Physics, Cosmology, Statistical Physics, Optics, etc.</p>
+    </div>
+
+    <!-- Master's Degree -->
+    <div class="education-box">
+      <h2>Copernicus Master in Digital Earth – CDE</h2>
+      <p><strong>Institution:</strong> University of Salzburg</p>
+      <p><strong>Year:</strong> 2025–Present</p>
+      <p><strong>Coursework:</strong> Spatial Databases, Methods in Spatial Analysis, Advanced Remote Sensing, etc.</p>
+    </div>
+
+    <!-- CV Section -->
+    <div class="education-box">
+      <h2>Curriculum Vitae</h2>
+      <p>You can download my full CV <a href="pedro_afonso_cv.pdf" target="_blank">here</a>.</p>
+    </div>
+  </div>
+
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
