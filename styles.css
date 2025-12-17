@@ -200,7 +200,7 @@ body, html {
 
 /* Education boxes */
 .education-box {
-  background: rgba(0, 0, 0, 0.7); /* Semi-opaque black */
+  background: rgba(0, 0, 0, 0.85); /* 85% opaque */
   border-radius: 8px;
   padding: 1.5rem;
   margin: 1rem auto;
@@ -208,6 +208,16 @@ body, html {
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   text-align: left;
+}
+
+/* Hyperlinks in education boxes */
+.education-box a {
+  color: #FFD700; /* Darker yellow */
+  text-decoration: none;
+}
+
+.education-box a:hover {
+  text-decoration: underline;
 }
 
 /* Mobile adjustments */
