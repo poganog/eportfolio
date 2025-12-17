@@ -198,4 +198,23 @@ body, html {
   }
 }
 
+/* Education boxes */
+.education-box {
+  background: rgba(0, 0, 0, 0.7); /* Semi-opaque black */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 800px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
 
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  .education-box {
+    max-width: 95%;
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+}
