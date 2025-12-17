@@ -253,6 +253,14 @@ body, html {
   border: none;
 }
 
+.map-note {
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
 /* Mobile adjustments */
 @media (max-width: 767px) {
   .content {
@@ -286,3 +294,4 @@ body, html {
     height: 250px;
   }
 }
+
