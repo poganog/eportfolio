@@ -112,9 +112,17 @@ body, html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Align content to the top */
   align-items: center;
-  box-sizing: border-box; /* Include padding in width/height */
+  box-sizing: border-box;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 767px) {
+  .content {
+    padding: 0.5rem;
+    justify-content: flex-start; /* Ensure content starts at the top */
+  }
 }
 
 /* Word cloud styling */
@@ -189,4 +197,5 @@ body, html {
     margin: 0.3rem;
   }
 }
+
 
