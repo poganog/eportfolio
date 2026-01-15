@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Course Header -->
+    <div class="course-header">
+      <h1>Digital Earth: Big Earth Data Concepts</h1>
+    </div>
+
+    <!-- Course Description (Optional) -->
+    <!-- 
+    <div class="course-description">
+      <p>
+        [Brief description of the course, e.g., "This course focused on geospatial analysis and humanitarian applications."]
+      </p>
+    </div>
+    -->
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Exploring the Copernicus Data Space Browser</h3>
+        <p>The Copernicus Data Space Ecosystem, launched in 2023, is the current portal to access the Copernicus satellite data.
+          It possesses countless functionalities, some of which deserve their time on the spotlight.
+          </p>
+          <p>
+          The possibilities to explore the different bands provided by Sentinel-2 alone are worth a report on the subject.
+          And that’s what I aim to do today!
+          </p>
+          <p>
+          I start by "playing around" with the band-substitution feature and then I explore the index creation feature.</p>
+        <a href="SegmentationPedroAfonso.pdf" class="download-btn">Download Article</a>
+      </div>
+
+      <!-- Project 2 -->
+
+      <!-- Project 3 -->
+
+    </div>
+  </div>
+
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+    </div>
+  </footer>
+</body>
+</html>
