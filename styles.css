@@ -322,8 +322,9 @@ body, html {
 
 .course-context {
   font-style: italic;
-  color: #FFD700;
+  color: white;
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .abstract {
@@ -457,6 +458,7 @@ body, html {
   }
   
 }
+
 
 
 
