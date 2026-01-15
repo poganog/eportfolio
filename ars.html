@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Course Header -->
+    <div class="course-header">
+      <h1>Advanced Remote Sensing</h1>
+    </div>
+
+    <!-- Course Description (Optional) -->
+    <!-- 
+    <div class="course-description">
+      <p>
+        [Brief description of the course, e.g., "This course focused on geospatial analysis and humanitarian applications."]
+      </p>
+    </div>
+    -->
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Image Segmentation</h3>
+        <p>Image segmentation has been called one of the pillars of Object-Based Image Analysis (OBIA).
+          That being said, there are countless different ways to proceed with this segmentation, therefore it’s always an interesting exercise to compare the results yielded by different approaches when segmenting the same image.
+          </p>
+          <p>
+          In this case, I compared the results of image segmentation done via the proprietary software "eCognition" and through Python programming with free libraries.</p>
+        <a href="SegmentationPedroAfonso.pdf" class="download-btn">Download Article</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Creating a Displacement Map</h3>
+        <p>The earthquake is still a mostly unpredictable natural catastrophe, with often disastrous consequences.
+          Therefore, the more information one can acquire after such an event, the closer one comes to being capable of predicting them in the future.
+          </p>
+          <p>
+          This report explores the use of ESA’s SNAP program to generate displacement maps by applying interferometry technics.
+          The focus event was the earthquake that hit Myanmar in March of 2025, and the result was accomplished using Sentinel-1 imagery.
+          </p>
+          <p>
+          The outcome is questionable, as explained in the report, but the technic is theoretically solid.</p>
+        <a href="Displacement.pdf" class="download-btn">Download Article</a>
+      </div>
+
+      <!-- Project 3 (if applicable) -->
+      <div class="project-card">
+        <h3>Cognition - Classification and Object Features</h3>
+        <p>eCognition has a plethora of tools aimed at Object-Based Image Analysis (OBIA).
+          In this report, I aimed to explore some of the segmentation and classification tools.
+          </p>
+          <p>
+          I began by comparing the Random Forest Classification and the Support Vector Machine Classification of a photo of the banks of the Salzach river taken by Planet.
+          Afterwards, I explored several Segmentation Objects Features in anold image of the south of Salzburg, most notably sub-class creation and super-objects creation.</p>
+        <a href="eCognitionFeatures_PedroAfonso.pdf" class="download-btn">Download Article</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+    </div>
+  </footer>
+</body>
+</html>
