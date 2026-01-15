@@ -239,7 +239,7 @@ body, html {
 /* Main Project Styling */
 .main-project {
   background: rgba(0, 0, 0, 0.9);
-  border: 2px solid #FFD700;
+  border: 2px solid white;
   border-radius: 8px;
   padding: 1.5rem;
   margin: 1rem auto;
@@ -259,7 +259,7 @@ body, html {
 }
 
 .project-link {
-  color: #FFD700;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -395,6 +395,7 @@ body, html {
     height: 300px;
   }
 }
+
 
 
 
