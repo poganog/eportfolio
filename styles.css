@@ -236,6 +236,80 @@ body, html {
   text-decoration: underline;
 }
 
+/* Main Project Styling */
+.main-project {
+  background: rgba(0, 0, 0, 0.9);
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  max-width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.main-project h3 {
+  color: #FFD700;
+  margin-bottom: 0.5rem;
+}
+
+.main-project p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.project-link {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* Other Assignments Styling */
+.other-assignments {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.other-assignments h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.assignment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.assignment-list li {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.assignment-list a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+.assignment-list a:hover {
+  text-decoration: underline;
+}
+
+
+/* City Networks Old Project */
+
 .explanation {
   margin: 1rem 0;
   line-height: 1.6;
@@ -321,6 +395,7 @@ body, html {
     height: 300px;
   }
 }
+
 
 
 
