@@ -249,7 +249,7 @@ body, html {
 }
 
 .main-project h3 {
-  color: #FFD700;
+  color: white;
   margin-bottom: 0.5rem;
 }
 
@@ -259,7 +259,7 @@ body, html {
 }
 
 .project-link {
-  color: white;
+  color: #FFD700;
   text-decoration: none;
   font-weight: bold;
 }
@@ -307,6 +307,58 @@ body, html {
   text-decoration: underline;
 }
 
+/* FUA Project */
+
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.course-context {
+  font-style: italic;
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.abstract {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  color: white;
+  line-height: 1.6;
+  text-align: justify;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.download-section {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.download-btn {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.9);
+  color: #FFD700;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #FFD700;
+  transition: background 0.3s, color 0.3s;
+}
+
+.download-btn:hover {
+  background: #FFD700;
+  color: black;
+}
 
 /* City Networks Old Project */
 
@@ -391,10 +443,21 @@ body, html {
     margin: 0.5rem auto;
   }
 
+  .project-header h1 {
+    font-size: 2rem;
+  }
+
+  .abstract {
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+
   .map-container iframe {
     height: 300px;
   }
+  
 }
+
 
 
 
