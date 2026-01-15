@@ -391,8 +391,9 @@ body, html {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   margin: 2rem auto;
-  max-width: 1000px;
-  padding: 0 1rem;
+  max-width: 11000px;
+  padding: 0 1.5rem; /* Added side padding to prevent cropping */
+  box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 .project-card {
@@ -402,6 +403,8 @@ body, html {
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s;
+  width: 100%; /* Ensure cards use full grid cell width */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .project-card:hover {
@@ -529,6 +532,7 @@ body, html {
 
   .projects-grid {
     grid-template-columns: 1fr;
+    padding: 0 1rem; /* Slightly less padding on mobile */
   }
 
   .course-header h1 {
@@ -540,3 +544,4 @@ body, html {
   }
   
 }
+
