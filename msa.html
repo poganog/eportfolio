@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Course Header -->
+    <div class="course-header">
+      <h1>Methods in Spatial Analysis</h1>
+    </div>
+
+    <!-- Course Description (Optional) -->
+    <!-- 
+    <div class="course-description">
+      <p>
+        [Brief description of the course, e.g., "This course focused on geospatial analysis and humanitarian applications."]
+      </p>
+    </div>
+    -->
+
+    <!-- Projects Grid -->
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Network Analysis of Salzburg</h3>
+        <p>The Network Analysis Tools of ArcGIS Online and ArcGIS Pro are incredibly versatile tools that make some complicated mathematical problems easily solvable with just a few clicks.
+          </p>
+          <p>
+          On this report, I explore several of them in the context of Tourist Attractions in the Austrian City of Salzburg.</p>
+        <a href="Methods1_PedroAfonso.pdf" class="download-btn">Download Article</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h3>Catchment Basin Analysis of the Thumersbach River</h3>
+        <p>Continuing the ongoing exploration of ArcGIS Pro Tools, the focus this time was on Digital Elevation Models (DEMs) and their relation with river catchment basins.
+          The study area was the basin of the Thumersbach River, and I explored the elevation and its derivatives, with special focus on the slope.
+          In the end, I compared the results for lower-resolution DEMs.</p>
+        <a href="Methods2_Pedro Afonso.pdf" class="download-btn">Download Article</a>
+      </div>
+
+      <!-- Project 3 -->
+      
+    </div>
+  </div>
+
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+    </div>
+  </footer>
+</body>
+</html>
