@@ -435,6 +435,20 @@ body, html {
   color: black;
 }
 
+.gee-container {
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gee-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* City Networks Old Project */
 
 .explanation {
@@ -541,5 +555,6 @@ body, html {
   }
   
 }
+
 
 
