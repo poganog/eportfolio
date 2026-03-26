@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Single centered wide card override */
+    .projects-grid.single-card {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+ 
+    .projects-grid.single-card .project-card {
+      max-width: 680px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+ 
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Course Header -->
+    <div class="course-header">
+      <h1>Spatial Databases</h1>
+    </div>
+ 
+    <!-- Projects Grid (single centered card) -->
+    <div class="projects-grid single-card">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Festa da Regueifa: a Spatial Database Example</h3>
+        <p>For the final assignment of Spatial Databases, I decided to create a Spatial Database for the 2026 Edition of Festa da Regueifa, the most important celebration in the Portuguese City of Valongo.
+          </p>
+          <p>
+          I created 5 tables, namely event_types, events, festival_days, structure_categories, structures, which should be enough to describe all the events taking place and provide information on a spatio-temporal level.</p>
+        <a href="SpatialDatabasesFinal.pdf" class="download-btn">Download Report</a>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+ 
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+ 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+    </div>
+  </footer>
+</body>
+</html>
