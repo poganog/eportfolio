@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Single centered wide card override */
+    .projects-grid.single-card {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+ 
+    .projects-grid.single-card .project-card {
+      max-width: 680px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+ 
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Course Header -->
+    <div class="course-header">
+      <h1>Object-Based Image Analysis</h1>
+    </div>
+ 
+    <!-- Projects Grid (single centered card) -->
+    <div class="projects-grid single-card">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Justice for Longyearbyen</h3>
+        <p>Copernicus' Global Human Settlement Layer (GHSL) is no meager achievement.
+          It still seems unbelievable that we now have pretty good approximation of how many people are leaving in each corner of the world!
+          </p>
+          <p>
+          That being said, it is not without mistakes, especially in higher latitudes, such as is the case of the Archipelago of Svalbard.
+          For the final assignment of OBIA, I decided to create a classification model trained on Norwegian settlements to assess wether or not it was possible to detect Longyearbyen (the capital and the largest settled area of Svalbard, where the famous Global Seed Vault is located).
+          </p>
+        <a href="OBIA_FINAL.html" class="download-btn">Check Jupyter Notebook</a>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+ 
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+ 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+    </div>
+  </footer>
+</body>
+</html>
