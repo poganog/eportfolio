@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Single centered wide card override */
+    .projects-grid.single-card {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+ 
+    .projects-grid.single-card .project-card {
+      max-width: 680px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+ 
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Course Header -->
+    <div class="course-header">
+      <h1>AI4EO - International Spring School</h1>
+    </div>
+ 
+    <!-- Projects Grid (single centered card) -->
+    <div class="projects-grid single-card">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Report</h3>
+        <p>During the Spring Break of the first year, I traveled to Vannes to take part in a program organized by the University of Southern Brittany, with focus on AI for Earth Observation.</p>
+        <p>Here's a day-by-day breakup:</p>
+        <ul>
+          <li>On the first day, the morning had two lectures, one on change detection in 3D point clouds and another on foundation models. In the afternoon, we had a hands-on session on foundation models. After a delayed start due to server overload (avoid using Google Drive to share files with a full auditorium), we "played" with a Jupyter Notebook that helped us compare several foundation models, from UNet to SkySense. At the end of the day, all the participants had a nice snack together.</li>
+          <li>On the morning of the second day, we discussed some common practices of Responsible AI. After lunch, we started by discussing the reproducibility of Science, with a focus on coding. This provided a nice segue to the introduction of the TorchGEO python library, which was designed to simplify data handling for AI in the geospatial domain. At the end of the day, we had another social event, this time a boat cruise around the Gulf of Morbihan.</li>
+          <li>The morning of the last day gave us a spotlight on generative models. In the afternoon, we began working on a data-driven project with ESA Phi-lab, which we were challenged to continue after returning home.</li>
+        </ul>
+        <p>Overall, I think it was a quite memorable experience. Howeever, as a first-year master student, I often found myself overwhelmed at some of the content being presented. Still thanks to the help of the older master students, as well as the doctorate students and the lecturers, I managed to learn a thing or two, and get my first exposure to a lot of new concepts.</p>
+      </div>
+    </div>
+    </div>
+ 
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+ 
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+ 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+    </div>
+  </footer>
+</body>
+</html>
