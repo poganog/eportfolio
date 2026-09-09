@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Project Header -->
+  <div class="content">
+    <h1>Learning Terrain Suitability for Rail using Portugal’s Existing Network</h1>
+    <p class="course-context">Project formalized for the "Scientific Methods and Writing" Course</p>
+
+    <!-- Abstract -->
+    <div class="abstract">
+      <p>
+        Railway alignment has its challenges, which is why there has been so much effort put into its automatization.
+        These processes usually include a comprehensive geographic model, with a digital terrain model as one of its many layers.
+      </p>
+      <p>
+        This paper presents a technique to process the terrain data in a way that takes the directional component of its suitability into account.
+        A Random Forest Model was trained using the existent rail network of Portugal as a mask for positive samples within a Digital Elevation Model and its directional derivatives.
+        This allowed the construction of 8 directional cost grids, which then made it possible to apply a Dijkstra algorithm to test the model with possible paths.
+      </p>
+      <p>
+        The tests were made in Western Portugal, more specifically the connection between Porto and Lisbon, with the results showing clear signs of the model understanding real terrain suitability.
+      </p>
+    </div>
+
+    <!-- Download Section -->
+    <div class="download-section">
+      <a href="Rail_AlvesNogueira.pdf" class="download-btn">Download Full Article</a>
+    </div>
+  </div>
+
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+  <footer class="footer">
+  <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+  </div>
+  <!-- <p class="footer-text">&copy; 2025 Pedro Afonso. All rights reserved.</p>-->
+</footer>
+</body>
+</html>
