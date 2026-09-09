@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Maris Nostri Mercatores: a Python Strategy Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Project Header -->
+    <div class="project-header">
+      <h1>Maris Nostri Mercatores: a Python Strategy Game</h1>
+      <p class="course-context">Done in the context of the "Software Development" Course, with Sara Chaourar</p>
+    </div>
+
+    <!-- Abstract -->
+    <div class="abstract">
+      <p>
+        <strong>Maris Nostri Mercatores (MNM)</strong> is a Python-based turn-based strategy game where players manage ports in the Mediterranean. 
+        Each player controls a port city, trading goods with other ports to keep the population happy, expanding hinterland to increase productivity and population, 
+        managing gold reserves and port fees, and avoiding being deposed by an unhappy population.
+      </p>
+      <p>
+        The game combines economic strategy with spatial calculations using real geographic data from the Mediterranean region.
+      </p>
+    </div>
+
+    <!-- Download Section -->
+    <div class="download-section">
+      <a href="https://github.com/yourusername/maris-nostri-mercatores" class="download-btn" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+  </div>
+
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+
+  <footer class="footer">
+    <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+    </div>
+  </footer>
+</body>
+</html>
