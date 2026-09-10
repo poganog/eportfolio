@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Afonso | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Single centered wide card override */
+    .projects-grid.single-card {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+ 
+    .projects-grid.single-card .project-card {
+      max-width: 680px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Image Workaround -->
+  <div class="background-container">
+    <picture class="background-picture">
+      <source media="(min-width: 768px)" srcset="images/Iberian_Peninsula_at_night.jpg">
+      <source media="(max-width: 767px)" srcset="images/Iberian_Peninsula_at_night_mobile.jpg">
+      <img src="Iberian_Peninsula_at_night.jpg" alt="Background" class="background-image">
+    </picture>
+  </div>
+ 
+  <!-- Responsive Navbar -->
+  <nav class="navbar">
+    <button class="hamburger" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About Me</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Course Header -->
+    <div class="course-header">
+      <h1>Summer Internship</h1>
+      <p>Lithium Mining in South America</p>
+    </div>
+ 
+    <!-- Projects Grid (single centered card) -->
+    <div class="projects-grid single-card">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h3>Report</h3>
+        <p>From the 1st of July to the 31st of August of 2026, I interned at the <a href="https://www.cirad.fr/" target="_blank" class="contact-link">Centre de coopération internationale en recherche agronomique pour le développement (CIRAD)</a>, in Montpellier, in the south of France.</p>
+        <p>I joined an investigation on how Lithium Mining in the South American salt desert (“salares”) was affecting the surrounding areas, and ended up focusing on the difference in water levels in the drainage basins where the mining sites were located.</p>
+        <p>I was given a lot of freedom to accomplish this, and I decided to create a python pipeline that analyzed Sentinel-2 imagery and estimated the water extent of the area of interest, later taking precipitation data (from CHIRPS and ERA5) to assess how the water level variation could have been influenced by the quantity of rain.</p>
+        <p>Overall, I considered the whole experience very valuable, not only due to the interesting subject I was investigating, but also the beauty of Montpellier and its neighbouring areas.</p>
+      </div>
+    </div>
+    </div>
+ 
+  <!-- Image Credit -->
+  <div class="image-credit">
+    <p>
+      Background image: "Iberian Peninsula at Night" by NASA,
+      <a href="https://www.flickr.com/photos/nasa2explore/" target="_blank" rel="noopener noreferrer">
+        NASA's Flickr
+      </a>
+    </p>
+  </div>
+ 
+  <!-- JavaScript for Hamburger Menu -->
+  <script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+  </script>
+ 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="sponsors">
+      <img src="images/co-funded-by-eu.png" alt="Sponsor 1" class="sponsor-logo">
+      <img src="images/PLUS Logo Inv.png" alt="Sponsor 2" class="sponsor-logo">
+      <img src="images/ubs.png" alt="Sponsor 3" class="sponsor-logo">
+    </div>
+  </footer>
+</body>
+</html>
